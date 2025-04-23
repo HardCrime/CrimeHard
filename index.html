@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -7,42 +8,34 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <a href="#bio">Биография</a>
-      <a href="#contacts">Контакты</a>
-      <a href="#projects">Проекты</a>
-      <a href="#channel">Канал</a>
-      <a href="#roulette">Рулетка</a>
-    </nav>
-  </header>
+  <nav class="nav">
+    <button onclick="showSection('bio')">БИОГРАФИЯ</button>
+    <button onclick="showSection('contacts')">КОНТАКТЫ</button>
+    <button onclick="showSection('projects')">ПРОЕКТЫ</button>
+    <button onclick="showSection('channel')">КАНАЛ</button>
+  </nav>
 
   <main>
-    <h1 class="glitch" data-text="HardCrime">HardCrime</h1>
-
-    <section class="section" id="bio">
-      <p>Перейти: <a href="https://t.me/avanbiolog" target="_blank">Биография</a></p>
+    <section id="bio" class="content-section">
+      <p>БИОГРАФИЯ:<br><a href="https://t.me/avanbiolog" target="_blank">Перейти</a></p>
     </section>
 
-    <section class="section" id="contacts">
-      <p>Перейти: <a href="https://t.me/VestHardov" target="_blank">Контакты</a></p>
+    <section id="contacts" class="content-section">
+      <p>НАПИСАТЬ МНЕ:<br><a href="https://t.me/VestHardov" target="_blank">@VestHardov</a></p>
     </section>
 
-    <section class="section" id="projects">
-      <p>Перейти: <a href="https://t.me/+_qjY_Dqsb9E3YTE5" target="_blank">Проекты</a></p>
+    <section id="projects" class="content-section">
+      <p>ПРОЕКТ «ВОСХОЖДЕНИЕ»:<br><a href="https://t.me/+_qjY_Dqsb9E3YTE5" target="_blank">Smotretz</a></p>
     </section>
 
-    <section class="section" id="channel">
-      <p>Перейти: <a href="https://t.me/ReturnCrimeSquad" target="_blank">Канал</a></p>
+    <section id="channel" class="content-section">
+      <p>КАНАЛ:<br><a href="https://t.me/ReturnCrimeSquad" target="_blank">Перейти</a></p>
     </section>
 
-    <section class="section" id="roulette">
-      <div class="roulette-wrapper">
-        <div class="wheel" id="wheel"></div>
-        <button id="spinButton" onclick="spin()">Крутить</button>
-        <p id="resultText"></p>
-        <p id="timerText"></p>
-      </div>
+    <section class="roulette-section">
+      <div class="wheel" id="wheel"></div>
+      <p id="timer">00:00:00</p>
+      <button onclick="spin()">КРУТИТЬ</button>
     </section>
   </main>
 
