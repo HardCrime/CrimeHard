@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HardCrime</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#bio">Биография</a>
+      <a href="#contacts">Контакты</a>
+      <a href="#projects">Проекты</a>
+      <a href="#channel">Канал</a>
+      <a href="#roulette">Рулетка</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="glitch" data-text="HardCrime">HardCrime</h1>
+
+    <section class="section" id="bio">
+      <p>Перейти: <a href="https://t.me/avanbiolog" target="_blank">Биография</a></p>
+    </section>
+
+    <section class="section" id="contacts">
+      <p>Перейти: <a href="https://t.me/VestHardov" target="_blank">Контакты</a></p>
+    </section>
+
+    <section class="section" id="projects">
+      <p>Перейти: <a href="https://t.me/+_qjY_Dqsb9E3YTE5" target="_blank">Проекты</a></p>
+    </section>
+
+    <section class="section" id="channel">
+      <p>Перейти: <a href="https://t.me/ReturnCrimeSquad" target="_blank">Канал</a></p>
+    </section>
+
+    <section class="section" id="roulette">
+      <div class="roulette-wrapper">
+        <div class="wheel" id="wheel"></div>
+        <button id="spinButton" onclick="spin()">Крутить</button>
+        <p id="resultText"></p>
+        <p id="timerText"></p>
+      </div>
+    </section>
+  </main>
+
+  <audio id="clickSound" src="click.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

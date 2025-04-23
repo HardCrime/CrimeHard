@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(-45deg, #2e004f, #6a0dad, #3e0f63, #9a4fff);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  color: white;
+  overflow-x: hidden;
+}
+...
